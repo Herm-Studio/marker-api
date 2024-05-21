@@ -54,7 +54,7 @@ async def convert_pdf_to_markdown(pdf_file: UploadFile = File(...), extract_imag
 def main():
     # Parse command-line arguments
     parser = argparse.ArgumentParser(description="Run the marker-api server.")
-    parser.add_argument("--host", default="127.0.0.1", help="Host IP address")
+    parser.add_argument("--host", default="0.0.0.0", help="Host IP address")
     parser.add_argument("--port", type=int, default=8000, help="Port number")
     args = parser.parse_args()
 
