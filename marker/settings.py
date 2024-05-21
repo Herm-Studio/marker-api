@@ -84,9 +84,9 @@ class Settings(BaseSettings):
     RAY_CORES_PER_WORKER: int = 1 # How many cpu cores to allocate per worker
 
     # Debug
-    DEBUG: bool = False # Enable debug logging
+    DEBUG: bool = True # Enable debug logging
     DEBUG_DATA_FOLDER: Optional[str] = None
-    DEBUG_LEVEL: int = 0 # 0 to 2, 2 means log everything
+    DEBUG_LEVEL: int = 2 # 0 to 2, 2 means log everything
 
     @computed_field
     @property
